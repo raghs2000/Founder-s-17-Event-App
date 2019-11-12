@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founder's Day 2017</title>
+    <style type="text/css">
+    	body {
+		 	margin: 0;
+		    height: 100vh;
+		    width: 100%;
+		    background: #0D5593;
+		    transition: opacity 250ms;
+		 }
+
+		.fade {
+		    opacity: 0;
+		}
+
+		.lamp {
+		    height: 150px;
+		    width: auto;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+    </style>
+</head>
+
+<body>
+    <img class="lamp" src="Images/lamp.png">    
+
+	<script type="text/javascript">
+		setTimeout(function(){
+			document.querySelector("body").classList.add("fade");
+			setTimeout(function() {
+				window.location.href = "home.html";
+			}, 250);
+		},2000);
+	</script>
+</body>
+</html>
